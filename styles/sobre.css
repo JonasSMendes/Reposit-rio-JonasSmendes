@@ -198,6 +198,16 @@ footer h4 {
 }
 
 @media (max-width: 670px) {
+
+    main img {
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .header-container a {
+        font-size: 14px;
+    }
+
     .section-info h1 {
         text-align: center;
     }

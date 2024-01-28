@@ -229,12 +229,21 @@ footer h4 {
 }
 
 @media (max-width: 670px) {
+    .header-container a {
+        font-size: 14px;
+    }
+
+    main img {
+        width: 50%;
+        margin-top: 50px;
+    }
+
     .section-info h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .section-info h5 {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .info-redes {
@@ -242,8 +251,13 @@ footer h4 {
         gap: 20px;
     }
 
+    .info-redes .button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
     .info-redes h3 {
-        font-size: 26px;
-        width: 100%;
+        font-size: 20px;
+        width: 80%;
     }
 }

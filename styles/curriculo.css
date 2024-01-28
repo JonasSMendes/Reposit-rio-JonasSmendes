@@ -302,10 +302,22 @@ footer h4 {
 }
 
 @media (max-width: 670px) {
+    main img {
+        width: 50%;
+        margin-top: 50px;
+
+    }
+
     .header-container {
         justify-content: center;
-        gap: 50px;
+    }
 
+    .container_formacoes {
+        width: 100%;
+    }
+
+    .header-container a {
+        font-size: 14px;
     }
 
     .apresentacao_de_formacoes {
@@ -319,4 +331,6 @@ footer h4 {
     .ferramenta_unica h3 {
         font-size: 10px;
     }
+
+
 }
