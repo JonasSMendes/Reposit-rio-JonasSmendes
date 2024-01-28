@@ -197,7 +197,7 @@ footer h4 {
     }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 670px) {
     .section-info h1 {
         text-align: center;
     }

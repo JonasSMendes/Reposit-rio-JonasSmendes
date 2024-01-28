@@ -189,6 +189,7 @@ main img {
 }
 
 .ferramenta_unica {
+    box-sizing: border-box;
     margin-top: 20px;
     width: 10%;
     flex-shrink: 0;
@@ -265,7 +266,7 @@ footer h4 {
     }
 
     .header-container a {
-        border-bottom: 2px solid var(--cor-letras);
+        border-bottom: 2px solid var(--cor-secudaria);
 
     }
 
@@ -301,11 +302,21 @@ footer h4 {
 }
 
 @media (max-width: 670px) {
+    .header-container {
+        justify-content: center;
+        gap: 50px;
+
+    }
+
     .apresentacao_de_formacoes {
         flex-direction: column;
     }
 
     .ferramenta_unica {
-        width: 20%;
+        width: 23%;
+    }
+
+    .ferramenta_unica h3 {
+        font-size: 10px;
     }
 }
