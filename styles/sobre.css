@@ -208,12 +208,16 @@ footer h4 {
         font-size: 14px;
     }
 
+    .section-info {
+        width: 100%;
+    }
+
     .section-info h1 {
         text-align: center;
     }
 
     .section-info p {
         text-align: center;
-        font-size: 10px;
+        font-size: 12px;
     }
 }
