@@ -19,6 +19,8 @@
 }
 
 body {
+    overflow-x: hidden;
+    width: 100%;
     background-color: var(--cor-fundo);
     height: 100%;
     box-sizing: border-box;
@@ -188,7 +190,7 @@ main img {
 
 .ferramenta_unica {
     margin-top: 20px;
-    width: 10%;
+    width: 5%;
     flex-shrink: 0;
     border-radius: 10px;
     border: 0.5px solid var(--cor-secudaria);
@@ -250,13 +252,11 @@ footer h4 {
 }
 
 
-
-
-
 @media (max-width: 1200px) {
     header {
         padding-top: 50px;
-        background-color: #E69F63;
+        background-color: var(--cor-fundo);
+        width: 100%;
     }
 
     .header-container {
@@ -265,7 +265,7 @@ footer h4 {
     }
 
     .header-container a {
-        border-bottom: 2px solid #D96E5D;
+        border-bottom: 2px solid var(--cor-letras);
 
     }
 
@@ -293,30 +293,19 @@ footer h4 {
         text-align: center;
     }
 
+    .ferramenta_unica {
+        width: 20%;
+    }
+
 
 }
 
-@media (max-width: 570px) {
-
-    .header-container a {
-        font-size: 18px;
+@media (max-width: 670px) {
+    .apresentacao_de_formacoes {
+        flex-direction: column;
     }
 
-    .section-info h1 {
-        font-size: 30px;
-    }
-
-    .section-info h5 {
-        font-size: 16px;
-    }
-
-    .info-redes {
-        width: 100%;
-        gap: 20px;
-    }
-
-    .info-redes h3 {
-        font-size: 26px;
-        width: 100%;
+    .ferramenta_unica {
+        width: 20%;
     }
 }

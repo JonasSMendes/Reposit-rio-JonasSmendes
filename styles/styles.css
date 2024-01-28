@@ -18,6 +18,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: var(--cor-fundo);
     height: 100%;
     box-sizing: border-box;
