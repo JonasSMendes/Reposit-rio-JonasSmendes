@@ -1,8 +1,16 @@
-const openProject = (projetos) => {
-    document.getElementById(projetos + '-template').style.display = 'block';
-}
+let sections = document.querySelectorAll("section");
 
-const closeProject = (projetos) => {
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 190;
+        let height = sec.offsetHeight;
 
-    document.getElementById(projetos + '-template').style.display = 'none';
+        if (top >= offset && top < offset + height) {
+            sec.classList.add("show-animate")
+        }
+        else {
+            sec.classList.remove("show-animate")
+        }
+    })
 }
