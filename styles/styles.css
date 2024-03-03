@@ -607,10 +607,12 @@ footer h4 {
     text-align: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
     header {
-        padding-top: 50px;
         background-color: var(--cor-fundo);
+        height: 80px;
+        position: absolute;
+
     }
 
     .header-container {
@@ -627,10 +629,12 @@ footer h4 {
 
         align-items: center;
         gap: 40px;
+
     }
 
     .section-1 {
         width: auto;
+        margin-top: 70px;
     }
 
     .section-1 h1 {
@@ -642,27 +646,30 @@ footer h4 {
     }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 780px) {
     .header-container a {
-        font-size: 14px;
-    }
-
-    main img {
-        width: 50%;
-        margin-top: 50px;
-    }
-
-    .section-1 h1 {
         font-size: 20px;
     }
 
+    .section-1 {
+        width: 100%;
+        gap: 20px;
+        justify-content: start;
+
+    }
+
+    .section-1 h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
     .section-1 h5 {
-        font-size: 12px;
+        font-size: 17px;
+
     }
 
     .info-redes {
         width: 100%;
-        gap: 20px;
     }
 
     .info-redes .button {
@@ -671,7 +678,93 @@ footer h4 {
     }
 
     .info-redes h3 {
-        font-size: 20px;
+        font-size: 16px;
         width: 80%;
+    }
+
+
+    .section-1-5 {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .section-1-5 h2 {
+        font-size: 36px;
+    }
+
+    .section-info {
+        flex-direction: column-reverse;
+    }
+
+    .section-skill {
+        width: 100%;
+
+    }
+
+    .skills h2 {
+        font-size: 17px;
+    }
+
+
+    .section-2 h2 {
+        font-size: 36px;
+    }
+
+    .section-project {}
+}
+
+@media (max-width: 500px) {
+
+    .section-1 h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .info-redes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-1-5 h2 {
+        font-size: 26px;
+    }
+
+    .section-1-5 h3 {
+        font-size: 12px;
+    }
+
+    .section-1-5 p {
+        font-size: 18px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .section-2 h2 {
+        font-size: 26px;
+    }
+
+    .section-2 h3 {
+        font-size: 12px;
+    }
+
+    .section-2-info {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .section-1 h1 {
+        font-size: 21px;
+    }
+
+    .header-container {
+        gap: 8px;
+    }
+
+    .section-1 {
+        height: 100vh;
     }
 }
