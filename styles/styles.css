@@ -93,13 +93,7 @@ section.show-animate .animate {
     opacity: 1;
 }
 
-.section-1 .animate {
-    transform: translateX(-100%);
-}
 
-.section-1.show-animate .animate {
-    transform: translateX(0);
-}
 
 .section-1-5 .animate {
     transform: translateX(100%);
