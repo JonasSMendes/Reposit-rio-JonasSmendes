@@ -647,6 +647,35 @@ footer h4 {
 }
 
 @media (max-width: 780px) {
+
+    section{
+        margin-bottom: 100px;
+    }
+
+    .show-animate{
+        display: none;
+    }
+
+    .section-1 .animate{
+       transform: none;
+       filter: blur(0px);
+    }
+
+    .section-1-5 .animate{
+        transform: none;
+        filter: blur(0px);
+     }
+
+     .section-2 .animate{
+        transform: none;
+        filter: blur(0px);
+     }
+
+    section .animate{
+        opacity: 1;
+        
+    }
+
     .header-container a {
         font-size: 20px;
     }

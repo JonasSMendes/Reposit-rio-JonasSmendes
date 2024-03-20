@@ -7,7 +7,11 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
 
         if (top >= offset && top < offset + height) {
-            sec.classList.add("show-animate")
+
+            if (window.innerWidth >= 780) {
+                sec.classList.add("show-animate")
+            }
+
         }
         else {
             sec.classList.remove("show-animate")
