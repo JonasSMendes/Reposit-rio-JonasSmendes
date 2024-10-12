@@ -120,18 +120,19 @@ section.show-animate .animate {
 /* Home principal */
 .section-1 {
     width: 80%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    position: relative;
+    transform-style: inherit;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 30vw 0 5vm;
     gap: 40px;
 }
 
 .section-1 h1 {
     font-size: 46px;
     font-family: 'Krona One', sans-serif;
-    text-align: center;
 }
 
 .section-1 h1 b {
