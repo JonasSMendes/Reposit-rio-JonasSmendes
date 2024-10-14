@@ -92,7 +92,6 @@ header {
 main {
     display: block;
     width: 100%;
-    margin: 8%;
     box-sizing: border-box;
     height: 100%;
 }
@@ -136,7 +135,7 @@ section.module.section-1{
     align-items: center;
     justify-content: center;
     margin: 40px 0;
-    width: 100vw;
+    width: 100%;
 }
 
 section.module.parallax{
@@ -164,14 +163,14 @@ section.module.parallax::after{
     position: absolute;
     z-index: 1;
     display: flex;
-    /*
+ 
     background: -moz-linear-gradient(to bottom , rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
     background: -webkit-linear-gradient(to bottom , rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
-    background: linear-gradient(to bottom , rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 110%);*/
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
 }
 
 section.module.parallax.section-1-5{
-    background-image: url("https://as1.ftcdn.net/v2/jpg/05/05/47/18/1000_F_505471875_HTZAkoti0QRRPbyf0q6gRUAHQGGHxvS9.jpg");
+    background-image: url("../assets/BG.jpg");
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -328,9 +327,11 @@ section.module.parallax.section-1-5{
 
     overflow: hidden;
     background-color: var(--cor-template);
-    border: 1px solid var(--cor-secudaria);
+    border: 1px solid #f90c52;
 
     margin-top: 60px;
+    position: relative;
+    z-index: 99;
 }
 
 
