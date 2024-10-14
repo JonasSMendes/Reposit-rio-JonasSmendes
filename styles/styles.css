@@ -342,9 +342,10 @@ section.module.parallax.section-1-5{
 
 .marquee-content {
     display: flex;
-    animation: marquee 20s linear infinite;
+    animation: marquee 25s linear infinite;
     width: max-content;
     align-items: center;
+    width: 100%;
 }
 
 .marquee-content span {
