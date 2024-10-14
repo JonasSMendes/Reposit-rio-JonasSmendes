@@ -43,22 +43,30 @@ body {
     height: 100%;
     box-sizing: border-box;
     color: var(--cor-letras);
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     background-image: url(../assets/Background\ Pattern.png);
 }
+
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80px;
-    background-color: var(--cor-fundo);
-
+    height: 50px; 
 }
 
 .header-container {
-    width: 80%;
+    padding: 0;
+    margin-top: 0;
+    position: absolute;
+    background-color: var(--cor-secudaria);
+    width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
@@ -82,10 +90,8 @@ header {
 }
 
 main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    width: 100%;
     margin: 8%;
     box-sizing: border-box;
     height: 100%;
@@ -102,8 +108,6 @@ section.show-animate .animate {
     opacity: 1;
 }
 
-
-
 .section-1-5 .animate {
     transform: translateX(100%);
 }
@@ -118,15 +122,77 @@ section.show-animate .animate {
 
 .section-2.show-animate .animate {
     transform: translateX(0);
+    
+}
+
+
+/* Home principal */
+
+section.module.section-1-5{
+    padding: 40px 0;
+}
+section.module.section-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    width: 100vw;
+}
+
+section.module.parallax{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+}
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    /*
+    background: -moz-linear-gradient(to bottom , rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -webkit-linear-gradient(to bottom , rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: linear-gradient(to bottom , rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 110%);*/
+}
+
+section.module.parallax.section-1-5{
+    background-image: url("https://as1.ftcdn.net/v2/jpg/05/05/47/18/1000_F_505471875_HTZAkoti0QRRPbyf0q6gRUAHQGGHxvS9.jpg");
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
+.container{
+    width: 100%;
+    max-width: 968px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 
-
-
-/* Home principal */
 .section-1 {
     width: 80%;
     min-height: 100vh;
@@ -223,7 +289,7 @@ section.show-animate .animate {
 
 .section-1-5 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,12 +323,14 @@ section.show-animate .animate {
 .container-range-info{
     gap: 0;
     width: 100vw;
-    height: 80px;
+    height: 50px;
     padding: 0;
 
     overflow: hidden;
     background-color: var(--cor-template);
     border: 1px solid var(--cor-secudaria);
+
+    margin-top: 60px;
 }
 
 
@@ -270,13 +338,15 @@ section.show-animate .animate {
     display: flex;
     animation: marquee 20s linear infinite;
     width: max-content;
+    align-items: center;
 }
 
 .marquee-content span {
-    padding: 10px 100px;
+    padding: 10px 20px;
     white-space: nowrap;
     font-size: 1.9em;
     color: var(--cor-lenear);
+    text-align: center;
     
     text-transform: uppercase;
 }
@@ -357,7 +427,7 @@ section.show-animate .animate {
 /* sesão de projetos */
 .section-2 {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     align-items: center;
     justify-items: center;
